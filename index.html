@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconn+ect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="homepage-body">
+  <div class="container-fluid">
+    <div class="topnav-container row">
+      <div class="topnav col col-sm-12 col-md-12 col-xl-12 col-lg-12 col-xxl-12" id="navbar">
+        <div id="logo-container">
+          <a id="logo" href="index.html">
+            <img src="Photos/MA.png">
+          </a>
+        </div>
+        <div class="skeuomorphic-buttons-navbar " id="gallery-container">
+          <a class="skeuomorphic-buttons" href="gallery.html">
+            <h2 class="heading-size-change">GALLERY</h2>
+          </a>
+        </div>
+        <div class="skeuomorphic-buttons-navbar" id="projects-container">
+          <a class="skeuomorphic-buttons" href="projects.html">
+            <h2 class="heading-size-change">PROJECTS</h2>
+          </a>
+        </div>
+        <div class="skeuomorphic-buttons-navbar" id="contact-container">
+          <a class="skeuomorphic-buttons" href="contact.html">
+            <h2 class="heading-size-change">CONTACT</h2>
+          </a>
+        </div>
+        <div class="skeuomorphic-buttons-navbar" id="about-container">
+          <a class="skeuomorphic-buttons" href="about-me.html">
+            <h2 class="heading-size-change">ABOUT</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <css-doodle grid="25">   
+      :doodle {
+        width: 100vmax; 
+        height: 100vmax;
+      }
+
+      @random {
+        border-top: .15em solid #2a3a45;
+        transition: .8s @r(.12s);
+      }
+
+      @random {
+        border-left: .15em solid #0f8282;
+        transition: .8s @r(.12s);
+      }
+
+
+      @random(.1) {
+        background: linear-gradient(@p(#2a3a45, #6E838A, #2a3a45, #188993), @lp)
+        55% / @r(60%) @lr
+        no-repeat;
+        transition: .4s @r(.8s);
+      }
+      @random {
+        filter: drop-shadow(0 0 10px #8AF3F3)
+        transition: .8s @r(.12s);
+      }        
+      @random {
+        filter: drop-shadow(0 0 10px #206369);
+        transition: .8s @r(.12s);
+      }
+      @random {
+        filter: drop-shadow(0 0 10px #2a3a45);
+        transition: .8s @r(.12s);
+      }
+      @random {
+        filter: drop-shadow(0 0 10px #6E838A);
+        transition: .8s @r(.12s);
+      }
+
+      @random(.1) {
+        clip-path: @shape(
+          points: 6;
+        );
+        background: @p(#2a3a45, #6E838A, #2a3a45, #188993)
+          50% / @r(60%);
+        background-repeat: no-repeat;
+        transition: .4s @r(.8s);
+        transform:
+          scale(@r(.2, .7));
+      }
+      
+      @random(.03) {
+        clip-path: @shape(hypocycloid 3);
+        background: @p(#2a3a45, #6E838A, #2a3a45, #188993)
+          50% / @r(60%);
+        background-repeat: no-repeat;
+        transition: .4s @r(.8s);
+        transform:
+          scale(@r(.2, .7));
+      }
+
+      @random(.01) {
+        clip-path: @shape(windmill);
+        background: @p(#2a3a45, #6E838A, #2a3a45, #188993)
+          50% / @r(60%);
+        background-repeat: no-repeat;
+        transition: .4s @r(.8s);
+        transform:
+          scale(@r(.2, .7));
+      }
+
+      @random(.03) {
+        clip-path: polygon(@pick(
+          '0 0, 100% 0, 100% 100%',
+          '0 0, 100% 0, 0 100%',
+          '0 0, 100% 100%, 0 100%',
+          '100% 0, 100% 100%, 0 100%'
+        ));
+        background: @p(#2a3a45, #6E838A, #2a3a45, #188993)
+          50% / @r(60%);
+        background-repeat: no-repeat;
+        transition: .4s @r(.8s);
+        transform:
+          scale(@r(.2, .7));
+      }
+    </css-doodle>
+  </div>
+
+
+    
+  
+
+
+
+  <script src="https://unpkg.com/css-doodle@0.34.9/css-doodle.min.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+</html>
